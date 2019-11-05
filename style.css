@@ -1,0 +1,216 @@
+@font-face {
+	font-family: 'PT Sans';
+	src: url('font/sans.ttf');
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url('font/serif.ttf');
+}
+@font-face {
+	font-family: 'ArchitectsDaughter';
+	src: url('font/ArchitectsDaughter.ttf');
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url('gambar/bg-web.png');
+}
+.container {
+	position: relative;
+	width: 800px;
+	height: 800px;
+	margin: 0 auto;
+}
+.header {
+	height: 150px;
+	background-image: url('gambar/bg-header.jpg');
+}
+.logo {
+	position: absolute;
+	/*width: 370px;
+	height: 100px;*/
+	top: -4px;
+	right: 10px;
+	z-index: 2;
+
+}
+.logo a,h1 {
+	text-decoration: none;
+	font-size: 40px;
+	color: #ff6666;
+	/*text-decoration: none solid rgb(247,161,58);*/
+	-webkit-text-stroke: 2px black;
+	font-family: 'ArchitectsDaughter';
+	text-shadow:
+   -1px -1px 1px #528e06,
+   -1px -1px 3px #528e06,
+   1px 1px 1px #243d05,
+   1px 1px 3px #243d05,
+   1px -1px 1px #eafed2,
+   -1px 1px 1px #eafed2;
+   transition: 2s;
+	/*text-shadow: 3px 2px 1px salmon;*/
+}
+.logo h1:hover {
+	opacity: 0.8;
+	color: orange;
+	filter: alpha(opacity=50);
+}
+/*.logo img {
+	width: 450px;
+	transition: 1s;
+}
+.logo img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}*/
+.navigasi {
+	position: absolute;
+	width: 800px;
+	height: 40px;
+	top: 150px;
+	background-color: black;
+	border-bottom: 5px solid #ff6666;
+	z-index: 1;
+}
+.navigasi ul li {
+	list-style: none;
+	float: left;
+}
+.navigasi ul li a {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'PT Sans';
+	color: white;
+	transition: 1s;
+}
+.navigasi ul li a:hover {
+	color: black;
+	background-color: #ff6666;
+}
+.sidebar {
+	background-color: #ded2d2;
+	position: relative;
+	width: 200px;
+	height: 650px;
+	top: 45px;
+}
+.iklan {
+	position: absolute;
+	width: 189px;
+	height: 365px;
+	top: 10px;
+	left: 5px;
+}
+.iklan img {
+	width: 180px;
+	margin: 5px 4px;
+	transition: 1s;
+}
+.iklan img:hover {
+	opacity: 0.8;
+	cursor: pointer;
+	filter: alpha(opacity=50);
+}
+.iklan img:last-of-type {
+	margin-top: 215px;
+}
+.saran {
+	position: absolute;
+	width: 180px;
+	height: 200px;
+	top: 170px;
+	left: 9px;
+}
+.saran div a {
+	display: inline-block;
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: Ubuntu;
+	background-color: #ff6666;
+	color: black;
+}
+.saran div a:hover {
+	color: white;
+	background-color: #3366ff;
+	transition: 1s;
+}
+.saran ul li {
+	list-style: none;
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	border-bottom: 3px solid #ff6666;
+	background-color: black;
+	transition: 1s;
+}
+.saran ul li:hover {
+	background-color: #3366ff;
+}
+.saran ul li a {
+	margin-left: 3px;
+	text-decoration: none;
+	color: white;
+}
+.main {
+	position: absolute;
+	width: 584px;
+	height: 634px;
+	top: 195px;
+	left: 200px;
+	padding: 8px;
+	background-color: white;
+}
+.main .judul a {
+	text-decoration: none;
+	font-family: Ubuntu;
+	color: black;
+}
+.main .judul p {
+	margin-top: -2px;
+	font-size: 14px;
+}
+.main .judul p span {
+	font-weight: bold;
+	color: #ff6666;
+}
+.konten {
+	margin-top: 15px;
+	text-align: justify;
+	font-size: 18px;
+	font-family: 'PT Serif';
+}
+.konten img {
+	width: 150px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 8px;
+}
+.konten p {
+	margin-top: 10px;
+}
+.footer {
+	width: 800px;
+	height: 30px;
+	margin-top: 45px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'PT Sans';
+	background-color: black;
+	color: white;
+	border-top: 3px solid #ff6666;
+}
